@@ -1,0 +1,117 @@
+:root {
+    --base-dark: #ffffff;
+    --base-light: #191919;
+    --color-black: #000000;
+    --color-slate: #191919;
+    --color-slate-light: #474747;
+    --color-white: #ffffff;
+    --color-grey: #cdcfd0;
+    --color-grey-light: #ebebeb;
+    --color-blue: #066aff;
+    --color-lilac: #bc71ff;
+    --color-pink: #ff1e43;
+    --color-orange: #ff5f00;
+    --color-green: #34dc00;
+    --color-blue-light: #33bbff;
+    --color-lilac-light: #e1c3ff;
+    --color-pink-light: #ffcfde;
+    --color-orange-light: #ffd888;
+    --color-green-light: #a8ff91;
+    --color-yellow: #ffff00;
+    --color-yellow-dark: #dddd00;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Oswald';
+}
+
+body {
+    background: white;
+    font-family: 'Space Grotesk';
+}
+
+/* 
+  Device = Large laptops, Desktops
+  Screen = B/w 1281px to 2560px
+*/
+
+@media (min-width: 1281px) and (max-width: 2560px) {
+
+    header {
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+        justify-content: center;
+        background: white;
+    }
+
+    #heading {
+
+    }
+
+    nav {
+    }
+    nav a {
+        margin-right: 1rem;
+    }
+
+    .nav-btn-enabled {
+        color: black;
+    }
+    .nav-btn-enabled:hover {
+        color: var(--color-yellow-dark);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        cursor: pointer;
+    }
+    .nav-btn-disabled {
+        color: var(--color-grey);
+        cursor: default;
+    }
+
+    .wrapper {
+        width: auto;
+        /* position: absolute;
+        left: 50%;
+        right: 50%; */
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    #block-left {
+        width: 15%
+    }
+    #block-right {
+        width: 15%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 1px black;
+        margin-top: 2rem;
+    }
+    .container-heading {}
+    .container-content {}
+
+}
+
+/* --- ALTERNATE COLOUR THEMES --- */

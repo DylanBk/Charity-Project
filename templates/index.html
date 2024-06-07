@@ -13,17 +13,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Young Minds Fundraiser | Home</title>
+    <title>YoungMinds Fundraiser | Home</title>
 </head>
 <body>
 
     <header>
         <div id="heading">
-            <h1>Young Minds Charity Fundraiser</h1>
+            <h1>YoungMinds Charity Fundraiser</h1>
         </div>
         <nav>
             <a class="nav-btn-disabled" href="{{ url_for('home') }}">Home</a>
-            <a class="nav-btn-enabled" href="{{ url_for('about_charity') }}">About Young Minds</a>
+            <a class="nav-btn-enabled" href="{{ url_for('about_charity') }}">About YoungMinds</a>
         </nav>
     </header>
 
@@ -32,12 +32,12 @@
 
         <div class="container-wrapper"> <!-- wrapper for containers -->
 
-            <div class="container">
+            <div id="container1" class="container">
                 <div class="container-heading"><h2>What is this site for?</h2></div>
-                <div class="container-content"><p>As part of our college project, we have made this website to raise awareness and money for <a href="https://www.youngminds.org.uk/" target="_blank">Young Minds Charity</a>.</p></div>
+                <div class="container-content"><p>As part of our college project, we have made this website to raise awareness and money for the <a href="https://www.youngminds.org.uk/" target="_blank">YoungMinds Charity</a>.</p></div>
             </div>
 
-            <div class="container">
+            <div id="container2" class="container">
                 <div class="container-heading">Placeholder</div>
                 <div class="container-content">Temp</div>
             </div>
@@ -46,6 +46,12 @@
 
         <div id="block-right"></div>
     </div>
+
+    <footer>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about_charity') }}">What is YoungMinds?</a>
+        <a href="https://www.youngminds.org.uk/">YoungMinds official website</a>
+    </footer>
 
 </body>
 <script src="{{ url_for('static', filename='script.js') }}"></script>

@@ -1,24 +1,20 @@
 :root {
-    --base-dark: #ffffff;
-    --base-light: #191919;
-    --color-black: #000000;
-    --color-slate: #191919;
-    --color-slate-light: #474747;
-    --color-white: #ffffff;
-    --color-grey: #cdcfd0;
-    --color-grey-light: #ebebeb;
-    --color-blue: #066aff;
-    --color-lilac: #bc71ff;
-    --color-pink: #ff1e43;
-    --color-orange: #ff5f00;
-    --color-green: #34dc00;
-    --color-blue-light: #33bbff;
-    --color-lilac-light: #e1c3ff;
-    --color-pink-light: #ffcfde;
-    --color-orange-light: #ffd888;
-    --color-green-light: #a8ff91;
-    --color-yellow: #ffff00;
-    --color-yellow-dark: #dddd00;
+    --colour-slate: #191919;
+    --colour-slate-light: #474747;
+    --colour-grey: #cdcfd0;
+    --colour-grey-light: #ebebeb;
+    --colour-blue: #066aff;
+    --colour-lilac: #bc71ff;
+    --colour-pink: #ff1e43;
+    --colour-orange: #ff5f00;
+    --colour-green: #34dc00;
+    --colour-blue-light: #33bbff;
+    --colour-lilac-light: #e1c3ff;
+    --colour-pink-light: #ffcfde;
+    --colour-orange-light: #ffd888;
+    --colour-green-light: #a8ff91;
+    --colour-yellow: #ffff00;
+    --colour-yellow-dark: #dddd00;
 }
 
 html {
@@ -33,6 +29,7 @@ html {
 }
 
 a {
+    font-family: 'Space Grotesk';
     text-decoration: none;
 }
 
@@ -47,7 +44,7 @@ body {
 
 /* 
   Device = Large laptops, Desktops
-  Screen = B/w 1281px to 2560px
+  Screen = 1281px to 2560px
 */
 
 @media (min-width: 1281px) and (max-width: 2560px) {
@@ -57,6 +54,8 @@ body {
         gap: 5rem;
         align-items: center;
         justify-content: center;
+        padding-bottom: 3rem;
+        border-bottom: solid 1px var(--colour-grey);
         background: white;
     }
 
@@ -74,21 +73,19 @@ body {
         color: black;
     }
     .nav-btn-enabled:hover {
-        color: var(--color-yellow-dark);
+        color: var(--colour-yellow-dark);
         text-decoration: underline;
         text-underline-offset: 2px;
         cursor: pointer;
     }
     .nav-btn-disabled {
-        color: var(--color-grey);
+        color: var(--colour-grey);
         cursor: default;
     }
 
     .wrapper {
         width: auto;
-        /* position: absolute;
-        left: 50%;
-        right: 50%; */
+        position: relative;
         display: flex;
         flex-direction:row;
         justify-content: center;
@@ -96,7 +93,7 @@ body {
     }
 
     #block-left {
-        width: 15%
+        width: 15% /* centers the containers */
     }
     #block-right {
         width: 15%;
@@ -106,12 +103,48 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
         border: solid 1px black;
         margin-top: 2rem;
     }
-    .container-heading {}
-    .container-content {}
+    .container-heading {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+    .container-content {
 
+    }
+    .container a {
+        color: black;
+        text-decoration: underline;
+    }
+    .container a:hover {
+        color: var(--colour-slate-light);
+    }
+
+    #container1 {
+        border: none;
+        background: var(--colour-yellow);
+        color: black;
+    }
+
+    footer {
+        height: 20%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: var(--colour-slate);
+    }
+    footer a {
+        color: white;
+        text-decoration: underline;
+    }
+    footer a:hover {
+        color: var(--colour-yellow-dark);
+    }
 }
 
 /* --- ALTERNATE COLOUR THEMES --- */

@@ -28,11 +28,11 @@ def err500(error):
 
 # --- PAGE ROUTING ---
 
-@app.route('/')
+@app.route('/') # if url is just '/' (aka default), it loads the home page
 def home():
     return render_template('index.html')
 
-@app.route('/about-charity')
+@app.route('/about-charity') # if url contains 'about-charity', about-charity.html is loaded
 def about_charity():
     return render_template('about-charity.html')
 

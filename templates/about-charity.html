@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YoungMinds Fundraiser | About Young Minds</title>
+
+    <title>YoungMinds Fundraiser | About</title>
 </head>
 <body>
 
@@ -14,9 +23,29 @@
         </div>
         <nav>
             <a class="nav-btn-enabled" href="{{ url_for('home') }}">Home</a>
-            <a class="nav-btn-disab" href="{{ url_for('about_charity') }}">About YoungMinds</a>
+            <a class="nav-btn-disabled" href="{{ url_for('about_charity') }}">About YoungMinds</a>
         </nav>
     </header>
-    
+
+    <div class="wrapper">
+        <div id="block-left"></div>
+
+        <div class="container-wrapper">
+
+            <div id="container-yellow" class="container">
+                <div class="container-heading"><h2>What is YoungMinds?</h2></div>
+                <div class="container-content"><p>placeholder</p></div>
+            </div>
+
+            <div id="container-mint" class="container">
+                <div class="container-heading"><h2>How can you help?</h2></div>
+                <div class="container-content"><p>placeholder</p></div>
+            </div>
+
+        </div>
+
+        <div id="block-right"></div>
+    </div>
+
 </body>
 </html>

@@ -57,6 +57,7 @@ body {
         padding: 1rem 0 3rem;
         border-bottom: solid 1px var(--colour-grey);
         background: white;
+        box-shadow: 0 -2px 20px 0 black;
     }
 
     #heading {
@@ -94,7 +95,7 @@ body {
         display: flex;
         flex-direction:row;
         justify-content: center;
-        margin-top: 3rem;
+        margin: 3rem 0;
     }
 
     #block-left {
@@ -109,16 +110,18 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
-        border: solid 1px black;
+        padding: 2rem;
         margin-top: 2rem;
     }
     .container-heading {
+        margin-bottom: 1rem;
         text-decoration: underline;
         text-underline-offset: 2px;
     }
     .container-content {
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .container a {
         color: black;
@@ -128,22 +131,51 @@ body {
         color: var(--colour-slate-light);
     }
 
-    #container-yellow {
+    .container-normal {
+        border: solid 1px black;
+        background: white;
+        color: black;
+    }
+
+    .container-yellow {
         border: none;
         background: var(--colour-yellow);
         color: black;
     }
 
-    #container-mint {
+    .container-mint {
         border: none;
         background: var(--colour-green-light);
+    }
+    .container-mint a:hover {
+        color: var(--colour-blue);
+    }
 
+    #donate-btn {
+        height: 60%;
+        padding: 1rem;
+        border-radius: 5px;
+        background: var(--colour-yellow);
+        text-decoration: none;
+        box-shadow: 5px 5px 0 0 var(--colour-blue-light);
+        transition: 0.3s;
+    }
+    #donate-btn:hover {
+        border-radius: 50px;
+        background: var(--colour-yellow-dark);
+        color: var(--colour-blue);
+        box-shadow: 1px 1px;
+        scale: 1.1;
+    }
+    #donate-btn:active {
+        box-shadow: none;
+        scale: 0.9;
     }
 
     footer {
-        height: 20%;
+        height: 7rem;
         width: 100%;
-        position: absolute;
+        position: sticky;
         bottom: 0;
         display: flex;
         align-items: center;
@@ -152,6 +184,7 @@ body {
         color: white;
     }
     footer a {
+        margin-bottom: 5pxs;
         color: white;
         text-decoration: underline;
     }
@@ -163,6 +196,11 @@ body {
         display: flex;
         flex-direction: column;
     }
+}
+
+
+.default-font { /* some symbols cause issues due to the fonts in-use or look better in Arial */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* --- ALTERNATE COLOUR THEMES --- */

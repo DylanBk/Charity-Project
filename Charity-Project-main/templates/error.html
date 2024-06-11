@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YoungMinds Fundraiser | {{ error_type }} </title>
+</head>
+<body>
+
+    <header>
+        <div id="heading">
+            <h1>YoungMinds Charity Fundraiser</h1>
+        </div>
+        <nav>
+            <a class="nav-btn-disabled" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-btn-enabled" href="{{ url_for('about_charity') }}">About YoungMinds</a>
+            <a class="nav-btn-enabled" href="https://www.youngminds.org.uk">YoungMinds</a>
+        </nav>
+    </header>
+
+    <div id="error-wrapper">
+        <div id="error-box">
+            <div id="error-title">{{ error_title }}</div>
+            <div id="error-subtitle">{{ error_subtitle | safe }}</div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about_charity') }}">What is YoungMinds?</a>
+            <a href="https://www.youngminds.org.uk/">YoungMinds official website</a>
+        </div>
+        <div id="footer-txt">
+            <p>Devloped by <a href="http://dylanbullock.co.uk" target="_blank">Dylan</a> and <a href="https://github.com/SenseiChromosome" target="_blank">Toby</a>.</p>
+            <br><p>We are not affiliated or partnered with YoungMinds, we are only raising awareness for their charity.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

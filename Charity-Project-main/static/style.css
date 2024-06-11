@@ -1,0 +1,221 @@
+:root {
+    --colour-slate: #191919;
+    --colour-slate-light: #474747;
+    --colour-grey: #cdcfd0;
+    --colour-grey-light: #ebebeb;
+    --colour-blue: #066aff;
+    --colour-lilac: #bc71ff;
+    --colour-pink: #ff1e43;
+    --colour-orange: #ff5f00;
+    --colour-green: #34dc00;
+    --colour-blue-light: #33bbff;
+    --colour-lilac-light: #e1c3ff;
+    --colour-pink-light: #ffcfde;
+    --colour-orange-light: #ffd888;
+    --colour-green-light: #a8ff91;
+    --colour-yellow: #ffff00;
+    --colour-yellow-dark: #dddd00;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    font-family: 'Space Grotesk';
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Oswald';
+}
+
+body {
+    background: white;
+    font-family: 'Space Grotesk';
+}
+
+/* 
+  Device = Large laptops, Desktops
+  Screen = 1281px to 2560px
+*/
+
+@media (min-width: 1281px) and (max-width: 2560px) {
+
+    header {
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0 3rem;
+        border-bottom: solid 1px var(--colour-grey);
+        background: white;
+        box-shadow: 0 -2px 20px 0 black;
+    }
+
+    #heading {
+
+    }
+
+    nav {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        border-left: solid 1px var(--colour-grey);
+    }
+    nav a {
+        margin-right: 1rem;
+    }
+
+    .nav-btn-enabled {
+        color: black;
+    }
+    .nav-btn-enabled:hover {
+        color: var(--colour-yellow-dark);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        cursor: pointer;
+    }
+    .nav-btn-disabled {
+        color: var(--colour-grey);
+        cursor: default;
+    }
+
+    .wrapper {
+        width: auto;
+        position: relative;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        margin: 3rem 0;
+    }
+
+    #block-left {
+        width: 15% /* centers the containers */
+    }
+    #block-right {
+        width: 15%;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+    .container-heading {
+        margin-bottom: 1rem;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+    .container-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container a {
+        color: black;
+        text-decoration: underline;
+    }
+    .container a:hover {
+        color: var(--colour-slate-light);
+    }
+
+    .container-normal {
+        border: solid 1px black;
+        background: white;
+        color: black;
+    }
+
+    .container-yellow {
+        border: none;
+        background: var(--colour-yellow);
+        color: black;
+    }
+
+    .container-mint {
+        border: none;
+        background: var(--colour-green-light);
+    }
+    .container-mint a:hover {
+        color: var(--colour-blue);
+    }
+
+    #donate-btn {
+        height: 60%;
+        padding: 1rem;
+        border-radius: 5px;
+        background: var(--colour-yellow);
+        text-decoration: none;
+        box-shadow: 5px 5px 0 0 var(--colour-blue-light);
+        transition: 0.3s;
+    }
+    #donate-btn:hover {
+        border-radius: 50px;
+        background: var(--colour-yellow-dark);
+        color: var(--colour-blue);
+        box-shadow: 1px 1px;
+        scale: 1.1;
+    }
+    #donate-btn:active {
+        box-shadow: none;
+        scale: 0.9;
+    }
+
+    footer {
+        height: 7rem;
+        width: 100%;
+        position: sticky;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: var(--colour-slate);
+        color: white;
+    }
+    footer a {
+        margin-bottom: 5pxs;
+        color: white;
+        text-decoration: underline;
+    }
+    footer a:hover {
+        color: var(--colour-yellow-dark);
+    }
+
+    #footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#error-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20% 0;
+}
+
+#error-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px var(--colour-grey);
+}
+
+.default-font { /* some symbols cause issues due to the fonts in-use or look better in Arial */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- ALTERNATE COLOUR THEMES --- */

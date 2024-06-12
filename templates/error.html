@@ -22,7 +22,7 @@
             <h1>YoungMinds Charity Fundraiser</h1>
         </div>
         <nav>
-            <a class="nav-btn-disabled" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-btn-enabled" href="{{ url_for('home') }}">Home</a>
             <a class="nav-btn-enabled" href="{{ url_for('about_charity') }}">About YoungMinds</a>
             <a class="nav-btn-enabled" href="https://www.youngminds.org.uk">YoungMinds</a>
         </nav>
@@ -30,7 +30,7 @@
 
     <div id="error-wrapper">
         <div id="error-box">
-            <div id="error-title">{{ error_title }}</div>
+            <div id="error-title"><h3>{{ error_title }}</h3></div>
             <div id="error-subtitle">{{ error_subtitle | safe }}</div>
         </div>
     </div>

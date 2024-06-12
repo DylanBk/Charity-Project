@@ -228,3 +228,17 @@ body {
 }
 
 /* --- ALTERNATE COLOUR THEMES --- */
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black; /* placeholder code, colours not determined yet */
+    }
+}
+
+/* HIGH CONTRAST */
+@media (prefers-contrast: more) {
+    body {
+        background: white; /* placeholder code, colours not determined yet */
+    }
+}

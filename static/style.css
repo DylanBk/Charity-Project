@@ -196,31 +196,31 @@ body {
         display: flex;
         flex-direction: column;
     }
-}
 
-#error-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 15% 0;
-}
+    #error-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 15% 0;
+    }
 
-#error-box {
-    width: 40%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 5px var(--colour-grey);
-}
-#error-box a {
-    color: black;
-    text-decoration: underline;
-}
-#error-box a:hover {
-    color: var(--colour-slate)
+    #error-box {
+        width: 40%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 5px var(--colour-grey);
+    }
+    #error-box a {
+        color: black;
+        text-decoration: underline;
+    }
+    #error-box a:hover {
+        color: var(--colour-slate)
+    }
 }
 
 .default-font { /* some symbols cause issues due to the fonts in-use or look better in Arial */

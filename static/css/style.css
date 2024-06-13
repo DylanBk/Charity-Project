@@ -38,6 +38,8 @@ h1, h2 {
 }
 
 body {
+    height: 100%;
+    width: 100%;
     background: white;
     font-family: 'Space Grotesk';
 }
